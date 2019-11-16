@@ -1,0 +1,6 @@
+{% assign about = site.data.about %}
+<article class="tile is-child notification is-info">
+  {% for paragraph in about %}
+  <p class="content">{{ paragraph | markdownify }}</p>
+  {% endfor %}
+</article>

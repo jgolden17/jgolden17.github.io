@@ -1,0 +1,10 @@
+{% assign social = site.data.social %}
+<section class="stack social-section flex flex-justify-between">
+  {% for item in social %}
+    {% assign name = item[0] %}
+    {% assign value = item[1] %}
+    <div class="{{ name }}">
+      <a href="{{ value.ref }}">{{ value.title}}</a>
+    </div>
+  {% endfor %}
+</section>
